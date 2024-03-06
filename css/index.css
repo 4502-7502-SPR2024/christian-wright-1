@@ -2,54 +2,39 @@
 
 nav {
 
-	background-color: white;
-	max-width: 800px;
-	margin: auto;
-	font-size: 1.5em;
-	border-radius: 0.2rem;
-	text-transform: uppercase;
-}
-
-nav ul {
 	display: flex;
-	align-items: stretch;
-	flex-direction: row;
-	justify-content: space-between;
-	
+	justify-content: center;
+	text-transform: uppercase;
+	font-family: ;
 }
 
-nav ul li {
-	background-color: white;
-	flex-flow: row wrap;
-	align-items: stretch;
-	list-style-type: none;
-	padding: 1rem;
-	max-width: 100%;
-	border-radius: 0.1rem;
+nav a {
+		font-family: "Playfair Display", serif;
+		text-align: center;
+		text-decoration: none;
+		justify-content: center;
+/*		width: 100%;*/
+		padding: 0.2rem;
+		margin: 0.1rem;
+		background: white;
+		border-radius: 0.1rem;
+		border: 1px solid white;
+		color: black;
+	}
 
-}
-
-nav ul li a {
-	font-family: 'Playfair Display', serif;
-	text-decoration: none;
-	color: black;
-}
-
-nav ul li a:visited {
-	color: black;
-}
-
-nav ul li a:hover {
-	text-decoration: ;
+nav a:visited {
 	color: red;
 }
+
+nav a:hover {
+	color: white;
+	background-color: white;
 }
 
 body {
 	 scrollbar-color: red orange;
   scrollbar-width: thin;
-/*	background: mediumpurple;*/
-	background: linear-gradient(#e66465, #9198e5);
+	background: lightgray;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -101,14 +86,14 @@ h1 {
 p {
 	font-family: "Crimson Text", serif;
 	font-size: 1.2rem;
-	color: #474747;
+	color: black;
 	display:inline-block;
 }
 
 li {
 	font-family: ;
 	font-size: 1rem;
-	color: red;
+	color: black;
 }
 
 img {
@@ -119,7 +104,6 @@ img {
 }
 
 body img {
-/*	max-width: 10rem;*/
 
 }
 
@@ -134,15 +118,13 @@ a:link {
 }
 
 .text-highlight {
-	background: #b17200;
-/*	color: #c4c4ff;*/
-	color: lightcyan;
+	background: black;
+	color: black;
 	padding-left: 1rem;
 }
 
 
 
-/*Classes start*/
 
 .shadow {
 	text-shadow: 10px 1px 2px orangered;	
@@ -157,7 +139,7 @@ a:link {
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 10px;
-  gap: 10px 20px; /* row-gap column gap */
+  gap: 10px 20px; 
   row-gap: 10px;
   column-gap: 10px;
 }
@@ -168,23 +150,11 @@ footer a {
 	color: darkcyan;
 }
 
-/*for your media queries this article is a good resource /**/
-/*https://web.dev/learn/design/media-queries?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%2F%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%2Fmedia-queries*/*/
 
-/*@media {}*/
-
-/*\{
-  // Styles for viewports wider than 400 pixels.
-	200px
-	576px 
-	768px
-	992px
-	1200px
-}
 */
 @media (max-width:200px) {
 	body {
-		background: linear-gradient(gray, white);
+		background: lightgray;
 	}
 	img {
 		max-width: 100%;
@@ -195,7 +165,7 @@ footer a {
 @media (min-width: 201px) and (max-width:575px) {
 	body {
 		
-		background: linear-gradient(gray, white);
+		background: lightgray;
 
 	}
 
@@ -207,7 +177,6 @@ footer a {
 		flex-direction: column;
 		
 
-/*		padding: 1rem;*/
 		margin: 0.2rem;
 		margin-right: 1rem;
 		margin-left: 1rem;
@@ -224,16 +193,16 @@ footer a {
 		background: #ffbb76;
 		border-radius: 0.1rem;
 		border: 1px solid #76baff;
-		color: #003d3d;
+		color: black;
 	}
 
 nav a:visited {
-	color: red;
+	color: black;
 	
 }
 
 nav a:link {
-	color: #003d3d;
+	color: black;
 
 }
 
@@ -306,12 +275,12 @@ ul {
 
 @media (min-width: 769px) and (max-width:1000px) {
 	body {
-		background: linear-gradient(gray, white);
+		background: lightgray;
 	}
 }
 
 @media (min-width: 1001px)  {
  	body {
- 		background: #fff;
+ 		background: lightgray;
 	}
 }

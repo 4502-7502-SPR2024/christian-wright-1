@@ -1,0 +1,303 @@
+
+
+nav {
+
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	font-family: ;
+}
+
+nav a {
+		font-family: "Sanchez", serif;
+		text-align: center;
+		text-decoration: none;
+		justify-content: center;
+/*		width: 100%;*/
+		padding: 0.2rem;
+		margin: 0.1rem;
+		background: #ffbb76;
+		border-radius: 0.1rem;
+		border: 1px solid #76baff;
+		color: darkcyan;
+	}
+
+nav a:visited {
+	color: darkcyan;
+}
+
+nav a:hover {
+	color: #ffbb76;
+	background-color: #003d3d;
+}
+
+body {
+	 scrollbar-color: red orange;
+  scrollbar-width: thin;
+/*	background: mediumpurple;*/
+	background: linear-gradient(#e66465, #9198e5);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-family: "Roboto", sans-serif;
+/*	max-width: 900px;*/
+}
+ section {
+
+ 	margin: 0.1rem;
+ }
+
+main {
+	display: flex;
+
+}
+
+
+body section .lead-image {
+	display: flex;
+	justify-content: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+title {
+
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-family: "Anta", sans-serif;
+	font-size: 4rem;
+	
+}
+
+.lead-image {
+	display: flex;
+	justify-content: center;
+
+}
+
+.lead-image img {
+	margin: auto;
+	object-fit: contain;
+	max-width: 100%;
+}
+
+p {
+	font-family: "Crimson Text", serif;
+	font-size: 1.2rem;
+	color: #474747;
+	display:inline-block;
+}
+
+li {
+	font-family: ;
+	font-size: 1rem;
+	color: red;
+}
+
+img {
+	max-width: 100%;
+	padding: 5px;
+	margin: auto;
+
+}
+
+body img {
+/*	max-width: 10rem;*/
+
+}
+
+a:link {
+	color: red;
+	text-decoration: none;
+}
+
+
+#test {
+	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.text-highlight {
+	background: #b17200;
+/*	color: #c4c4ff;*/
+	color: lightcyan;
+	padding-left: 1rem;
+}
+
+
+
+/*Classes start*/
+
+.shadow {
+	text-shadow: 10px 1px 2px orangered;	
+}
+
+.copyright {
+	font-size: 0.9rem;
+}
+
+.flex-example {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+
+
+footer a {
+	color: darkcyan;
+}
+
+/*for your media queries this article is a good resource /**/
+/*https://web.dev/learn/design/media-queries?continue=https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%2F%23article-https%3A%2F%2Fweb.dev%2Flearn%2Fdesign%2Fmedia-queries*/*/
+
+/*@media {}*/
+
+/*\{
+  // Styles for viewports wider than 400 pixels.
+	200px
+	576px 
+	768px
+	992px
+	1200px
+}
+*/
+@media (max-width:200px) {
+	body {
+		background: linear-gradient(gray, white);
+	}
+	img {
+		max-width: 100%;
+	}
+
+}
+
+@media (min-width: 201px) and (max-width:575px) {
+	body {
+		
+		background: linear-gradient(gray, white);
+
+	}
+
+	p {
+		color: #d6d6d6;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		
+
+/*		padding: 1rem;*/
+		margin: 0.2rem;
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+
+	nav a {
+		font-family: "Anta", sans-serif;
+		text-align: center;
+		text-decoration: none;
+		justify-content: center;
+		width: 100%;
+		padding: 0.2rem;
+		margin: 0.1rem;
+		background: #ffbb76;
+		border-radius: 0.1rem;
+		border: 1px solid #76baff;
+		color: #003d3d;
+	}
+
+nav a:visited {
+	color: red;
+	
+}
+
+nav a:link {
+	color: #003d3d;
+
+}
+
+
+
+	main {
+	display: flex;
+	flex-direction: column;
+}
+section {
+	margin-top: 1rem;
+}
+
+
+	h1 {
+		font-size: 2rem;
+		background: #b17200;
+		color: blue;
+		text-align: center;
+	}
+	img {
+
+	}
+
+	.lead-image {
+	display: flex;
+	justify-content: center;
+	max-width: 95%;
+}
+
+.lead-image img {
+	margin: 0 auto;
+	object-fit: contain;
+	max-width: 100%;
+	border: 5px solid crimson;
+	border-radius: 15rem;
+}
+
+a:link {
+	color: skyblue;
+}
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: pink;
+}
+
+ol li {
+	color: lightgray; !important;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.list45 {
+	font-size: 5rem;
+}
+
+}
+
+@media (min-width: 576px) and (max-width:768px) {
+	body {
+		background: linear-gradient(blue, red);
+	}
+}
+
+
+@media (min-width: 769px) and (max-width:1000px) {
+	body {
+		background: linear-gradient(gray, white);
+	}
+}
+
+@media (min-width: 1001px)  {
+ 	body {
+ 		background: #fff;
+	}
+}

@@ -195,7 +195,7 @@ example-image {
 	display: flex;
 /*	flex-wrap: wrap;*/
 	box-shadow: inset 1rem 1rem white;
-	border-radius: 3px;
+	border-radius: 1px;
 }
 
 
@@ -263,7 +263,7 @@ example-image {
 
 	max-width: 200px;
 	margin: 1rem;
-	box-shadow: 3px 3px white;
+	box-shadow: 6px 6px white;
 	border-radius: 0.3rem;
 	
 }
@@ -353,8 +353,8 @@ background-color: white;
 
 
 .list-intro {
-	margin: 1rem;
-	padding: 1rem;
+	margin: 2rem;
+	padding: 2rem;
 	background-color: white;
 }
 

@@ -272,7 +272,9 @@ example-image {
 	
 }
 
-
+.media-holder {
+	
+}
 
 
 .fancy-text {
@@ -423,7 +425,10 @@ nav ul li a {
 	margin:1rem;
 }
 
-
+.hyper-link {
+ text-decoration:none;
+ color: rgb(255, 117, 24);
+}
 
 
 

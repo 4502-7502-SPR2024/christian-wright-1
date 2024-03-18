@@ -188,19 +188,25 @@ example-image {
 .listings2 {
 	display: flex;
 	flex-wrap: wrap;
+	min-width: 100%;
+	max-width: 100%;
 }
 
 
-.list-item {
+.text-holder {
 	display: flex;
+	margin: auto;
+	min-width: 100%;
+	max-width: 100%;
 /*	flex-wrap: wrap;*/
 	box-shadow: inset 1rem 1rem white;
 	border-radius: 1px;
+	padding: 5%;
 }
 
 
 
-.list-item h2 {
+.text-holder h2 {
 	display: flex;
 	font-family: "Angkor", serif;
 }
@@ -210,17 +216,15 @@ example-image {
 }
 
 
-.list-item .date-label {
+.text-holder .date-label {
 	display: flex;
 	font-weight: 200;
 	margin-left: 1rem;
 }
 
-.list-item .desc-label {
+.text-holder .desc-label {
 	display: flex;
 	font-weight: 400;
-	margin-left:1rem;
-	padding: 0.25rem;
 	margin-top: -1rem;
 
 }

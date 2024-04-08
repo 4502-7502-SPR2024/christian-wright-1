@@ -1,8 +1,43 @@
-const images = document.querySelectorAll('.gallery img');
+"use strict";
 
-images.forEach(image => {
-    image.addEventListener('click', () => {
-        // You can add code here to handle what happens when an image is clicked, e.g., opening it in a modal.
-        console.log('Image clicked:', image.alt);
-    });
+var photoDivs = document.getElementsByClassName("gallery-image");
+
+var nextButton = document.getElementById("button_next");
+
+var previousButton = document.getElementById("button_previous");
+
+var photoNumber = document.getElementById("stepper");
+
+var currentPhotoNumber = 0;
+
+photoDivs[currentPhotoNumber].classList.remove('hideThis');
+
+photoNumber.innerHTML = (currentPhotoNumber + 1) + " out of " + photoDivs.length;
+
+nextButton.addEventListener('click', function() {
+  photoDivs[currentPhotoNumber].classList.add("hideThis");
+  currentPhotoNumber = currentPhotoNumber + 1;
+
+  if (currentPhotoNumber === photoDivs.length) {
+    currentPhotoNumber = 0;
+  }
+
+  photoDivs[currentPhotoNumber].classList.remove('hideThis');
+
+  photoNumber.innerHTML = (currentPhotoNumber + 1) + " out of " + photoDivs.length;
+
+});
+
+previousButton.addEventListener('click', function() {
+  photoDivs[currentPhotoNumber].classList.add("hideThis");
+  currentPhotoNumber = currentPhotoNumber - 1;
+
+  if (currentPhotoNumber < 0) {
+    currentPhotoNumber = photoDivs.length - 1;
+  }
+
+  photoDivs[currentPhotoNumber].classList.remove('hideThis');
+
+  photoNumber.innerHTML = (currentPhotoNumber + 1) + " out of " + photoDivs.length;
+
 });

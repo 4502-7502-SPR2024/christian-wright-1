@@ -26,7 +26,7 @@ font-size: 20px;
 
 body {
   margin: 0px;
-  background-color: #lightgray;
+  background-color: lightgray;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -60,7 +60,7 @@ ul, ol {
 /*end of updated nav and ul, ol*/
 
 nav a {
-  color: lightgray;
+  color: black;
 }
 
 a {
@@ -104,8 +104,8 @@ nav li, nav li a {
 
 /*Footer section*/
 footer {
-  background: #000;
-  color: lightgray;
+  background: lightgray;
+  color: white;
   width: 100%;
   margin: 0;
   padding: 1rem;

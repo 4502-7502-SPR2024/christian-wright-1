@@ -42,12 +42,12 @@ main {
 
 /*beginning updated nav and ul, ol*/
 nav {
-  color: lightgray;
-  background-color: #000000;
-  padding: 0;
-  display: block;
-  margin: 0;
-  border-bottom: 3px solid #FFF;
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.5em;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
 }
 
 ul, ol {
